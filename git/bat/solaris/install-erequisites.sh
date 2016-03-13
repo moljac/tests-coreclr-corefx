@@ -16,6 +16,12 @@ TOOLS=\
 	gcc5core \
 	gcc5g++ \
 	gdb \
+	gettext \
+	
+	
+	
+	
+	libicu \
 	
 
 for PACKAGE in $PACKAGES;
