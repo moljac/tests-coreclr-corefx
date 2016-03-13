@@ -1,0 +1,6 @@
+[submodule "git/coreclr"]
+	path = git/coreclr
+	url = https://github.com/moljac/coreclr.git
+[submodule "git/corefx"]
+	path = git/corefx
+	url = https://github.com/moljac/corefx.git
