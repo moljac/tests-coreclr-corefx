@@ -4,7 +4,7 @@
 #	http://www.bolthole.com/solaris/solaris11-pkg.html
 # 	http://www.pearsonitcertification.com/articles/article.aspx?p=31540&seqNum=3
 
-TOOLS=\
+PACKAGES="\
 	git \
 	autoconf \
 	automake \
@@ -16,11 +16,17 @@ TOOLS=\
 	gcc5core \
 	gcc5g++ \
 	gdb \
-	
+	"
+
+echo $PACKAGES
 
 for PACKAGE in $PACKAGES;
 do
 	echo $PACKAGE
+	# pkgadd -d http://get.opencsw.org/now
+	/opt/csw/bin/pkgutil -U
+	/opt/csw/bin/pkgutil -a $PACKAGE
+	/opt/csw/bin/pkgutil -y -i $PACKAGE
 done
 
 	
