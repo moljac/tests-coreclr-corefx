@@ -18,11 +18,6 @@ TOOLS=\
 	gdb \
 	gettext \
 	
-	
-	
-	
-	libicu \
-	
 
 for PACKAGE in $PACKAGES;
 do
